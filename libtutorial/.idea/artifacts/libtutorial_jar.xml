@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="libtutorial:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/libtutorial_jar</output-path>
+    <root id="archive" name="libtutorial.jar">
+      <element id="module-output" name="libtutorial" />
+    </root>
+  </artifact>
+</component>
