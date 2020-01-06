@@ -14,10 +14,8 @@ public class LoginUtils {
     }
 
     private static boolean check(){
-        System.out.print("Username : ");
-        String username = sc.nextLine();
-        System.out.print("Password : ");
-        String password = sc.nextLine();
+        String username = getString("Userame");
+        String password = getString("Password");
 
         int id = checkInTheSystem(username, password);
         if(id!=-1){

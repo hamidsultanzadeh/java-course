@@ -12,9 +12,7 @@ public class OperationsUtils {
         int op = 0;
 
         while (op != 6) {
-            System.out.print("Select :");
-
-            op = sc.nextInt();
+            op = getInteger("Select");
 
             switch (op) {
                 case 1:
@@ -44,14 +42,9 @@ public class OperationsUtils {
     }
 
     private static void registerStudent() {
-        System.out.print("Name : ");
-        sc.nextLine();
-        String name = sc.nextLine();
-        System.out.print("Surname : ");
-        String surname = sc.nextLine();
-        System.out.print("Age : ");
-        Integer age = sc.nextInt();
-
+        String name = getString("Name");
+        String surname = getString("Surname");
+        Integer age = getInteger("Age");
         Student student = new Student(name, surname, age);
         students.add(student);
         System.out.println("New student : "+student);
@@ -59,25 +52,15 @@ public class OperationsUtils {
 
 
     private static void editStudent() {
-        System.out.print("Name : ");
-        sc.nextLine();
-        String name = sc.nextLine();
-        System.out.print("Surname : ");
-        String surname = sc.nextLine();
-        System.out.print("Age : ");
-        Integer age = sc.nextInt();
 
-        Integer id = searchUtil(name,surname,age);
+        Integer id = utility();
 
         if(id != null){
+            if(id == -1) return ;
             System.out.println("Found");
-            System.out.print("New name : ");
-            sc.nextLine();
-            String newName = sc.nextLine();
-            System.out.print("New surname : ");
-            String newSurname = sc.nextLine();
-            System.out.print("New age : ");
-            Integer newAge = sc.nextInt();
+            String newName = getString("New name");
+            String newSurname = getString("New surname");
+            Integer newAge = getInteger("New age");
             Student student = new Student(newName,newSurname,newAge);
             students.set(id,student);
             System.out.println("Edited student : " + student);
@@ -98,23 +81,21 @@ public class OperationsUtils {
     }
 
     private static void listStudent() {
+        if(ListIsEmpty()){
+            System.out.println("There are not students");
+            return;
+        }
         for (Student s : students){
             System.out.println(s);
         }
     }
 
     private static void removeStudent() {
-        System.out.print("Name : ");
-        sc.nextLine();
-        String name = sc.nextLine();
-        System.out.print("Surname : ");
-        String surname = sc.nextLine();
-        System.out.print("Age : ");
-        Integer age = sc.nextInt();
 
-        Integer id = searchUtil(name,surname,age);
+        Integer id = utility();
 
         if(id != null){
+            if(id == -1) return ;
             System.out.println("Found");
 
             students.remove(id.intValue());
@@ -125,13 +106,9 @@ public class OperationsUtils {
     }
 
     private static void search() {
-        System.out.print("Name : ");
-        sc.nextLine();
-        String name = sc.nextLine();
-        System.out.print("Surname : ");
-        String surname = sc.nextLine();
-        System.out.print("Age : ");
-        Integer age = sc.nextInt();
+        String name = getString("Name");
+        String surname = getString("Surname");
+        Integer age = getInteger("Age");
 
         Integer id = searchUtil(name,surname, age);
         if(id!=null){
@@ -141,5 +118,23 @@ public class OperationsUtils {
             System.out.println("Not found");
         }
     }
+
+    private static Integer utility(){
+        if(ListIsEmpty()) {
+            System.out.println("There are not students");
+            return -1;
+        }
+        String name = getString("Name");
+        String surname = getString("Surname");
+        Integer age = getInteger("Age");
+
+        return searchUtil(name,surname,age);
+    }
+
+    private static boolean ListIsEmpty(){
+        return students.isEmpty();
+    }
+
+
 
 }
