@@ -1,7 +1,4 @@
-package com.hamidsultanzadeh;
-
-import com.bean.BMW;
-import com.bean.Car;
+package com.abstraction;
 
 public class Main {
 

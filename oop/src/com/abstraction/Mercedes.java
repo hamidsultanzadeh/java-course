@@ -1,4 +1,4 @@
-package com.bean;
+package com.abstraction;
 
 public class Mercedes extends Car {
 
