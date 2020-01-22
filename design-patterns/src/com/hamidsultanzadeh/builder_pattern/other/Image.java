@@ -1,7 +1,5 @@
 package com.hamidsultanzadeh.builder_pattern.other;
 
-import com.hamidsultanzadeh.builder_pattern.ImageBuilder;
-
 public class Image {
 
     private String name;
@@ -12,36 +10,17 @@ public class Image {
     private Image() {
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
-
-    private void setName(String name) {
-        this.name = name;
-    }
-
-    private String getAuthor() {
+    public String getAuthor() {
         return author;
     }
-
-    private void setAuthor(String author) {
-        this.author = author;
-    }
-
-    private int getSize() {
+    public int getSize() {
         return size;
     }
-
-    private void setSize(int size) {
-        this.size = size;
-    }
-
-    private String getDate() {
+    public String getDate() {
         return date;
-    }
-
-    private void setDate(String date) {
-        this.date = date;
     }
 
     public static class ImageBuilder {
@@ -62,22 +41,22 @@ public class Image {
         }
 
         public ImageBuilder setName(String name) {
-            this.image.setName(name);
+            this.image.name = name;
             return this;
         }
 
         public ImageBuilder setAuthor(String author) {
-            this.image.setAuthor(author);
+            this.image.author = author;
             return this;
         }
 
         public ImageBuilder setSize(int size) {
-            this.image.setSize(size);
+            this.image.size = size;
             return this;
         }
 
         public ImageBuilder setDate(String date) {
-            this.image.setDate(date);
+            this.image.date = date;
             return this;
         }
 
