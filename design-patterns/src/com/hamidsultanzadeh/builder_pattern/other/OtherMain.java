@@ -12,12 +12,15 @@ public class OtherMain {
         builder.setDate("21-01-2020");
 
         Image image = builder.build();
+        System.out.println(image.toString());
 
-        ImageBuilder builder2 = new ImageBuilder();
+        builder.setName("Name Changed or not?"); //immutable ImageBuilder
+        System.out.println(image.toString());
+
+        ImageBuilder builder2 = new ImageBuilder(); //new object
 
         Image image2 = builder2.build();
 
-        System.out.println(image.toString());
         System.out.println(image2.toString());
     }
 }

@@ -10,6 +10,13 @@ public class Image {
     private Image() {
     }
 
+    private Image(String name, String author, int size, String date) {
+        this.name = name;
+        this.author = author;
+        this.size = size;
+        this.date = date;
+    }
+
     public String getName() {
         return name;
     }
@@ -37,7 +44,7 @@ public class Image {
         }
 
         public Image build() {
-            return this.image;
+            return new Image(image.name,image.author,image.size,image.date);
         }
 
         public ImageBuilder setName(String name) {
