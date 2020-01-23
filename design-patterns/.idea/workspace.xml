@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5258171-e4a9-4b3c-8127-781bb97db3c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/hamidsultanzadeh/builder_pattern/other/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/builder_pattern/other/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hamidsultanzadeh/builder_pattern/other/OtherMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/builder_pattern/other/OtherMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/proxy_pattern/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/proxy_pattern/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/proxy_pattern/ProxyImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/proxy_pattern/RImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/proxy_pattern/other/Connector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/proxy_pattern/other/HeavyConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/proxy_pattern/other/ProxyConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/design-patterns/com/hamidsultanzadeh/builder_pattern/other/OtherMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/design-patterns/com/hamidsultanzadeh/builder_pattern/other/OtherMain.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,13 +50,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.OtherMain">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hamidsultanzadeh.builder_pattern.Main" />
       <module name="design-patterns" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hamidsultanzadeh.builder_pattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hamidsultanzadeh.proxy_pattern.Main" />
+      <module name="design-patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hamidsultanzadeh.proxy_pattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,9 +104,11 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.OtherMain" />
+      <item itemvalue="Application.Main (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.OtherMain" />
         <item itemvalue="Application.Main (1)" />
       </list>
@@ -114,7 +137,9 @@
       <option name="presentableId" value="Default" />
       <updated>1579604966080</updated>
       <workItem from="1579604974167" duration="12672000" />
-      <workItem from="1579713331621" duration="787000" />
+      <workItem from="1579713331621" duration="4919000" />
+      <workItem from="1579773461660" duration="2614000" />
+      <workItem from="1579789647285" duration="1078000" />
     </task>
     <servers />
   </component>
@@ -122,29 +147,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="570" y="155" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1579714008751">
+    <state x="570" y="155" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1579775987317">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="570" y="155" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1579714008751" />
-    <state width="1874" height="382" key="GridCell.Tab.0.bottom" timestamp="1579714123470">
+    <state x="570" y="155" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1579775987317" />
+    <state width="1874" height="382" key="GridCell.Tab.0.bottom" timestamp="1579776162988">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="382" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1579714123470" />
-    <state width="1874" height="382" key="GridCell.Tab.0.center" timestamp="1579714123468">
+    <state width="1874" height="382" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1579776162988" />
+    <state width="1874" height="382" key="GridCell.Tab.0.center" timestamp="1579776162986">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="382" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1579714123468" />
-    <state width="1874" height="382" key="GridCell.Tab.0.left" timestamp="1579714123467">
+    <state width="1874" height="382" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1579776162986" />
+    <state width="1874" height="382" key="GridCell.Tab.0.left" timestamp="1579776162985">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="382" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1579714123467" />
-    <state width="1874" height="382" key="GridCell.Tab.0.right" timestamp="1579714123469">
+    <state width="1874" height="382" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1579776162985" />
+    <state width="1874" height="382" key="GridCell.Tab.0.right" timestamp="1579776162987">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="382" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1579714123469" />
+    <state width="1874" height="382" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1579776162987" />
     <state x="463" y="157" width="907" height="777" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579624546491">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="463" y="157" width="907" height="777" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1579624546491" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1579775995434">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1579775995434" />
   </component>
 </project>
