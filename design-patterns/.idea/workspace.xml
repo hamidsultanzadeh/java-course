@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5258171-e4a9-4b3c-8127-781bb97db3c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/factory_pattern/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/factory_pattern/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/factory_pattern/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/factory_pattern/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/factory_pattern/ShapeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/factory_pattern/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/enums/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hamidsultanzadeh/enums/OPERATION.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/design-patterns/com/hamidsultanzadeh/proxy_pattern/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/design-patterns/com/hamidsultanzadeh/proxy_pattern/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/design-patterns/com/hamidsultanzadeh/proxy_pattern/other/ProxyConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/design-patterns/com/hamidsultanzadeh/proxy_pattern/other/ProxyConnector.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -46,11 +41,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main (4)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hamidsultanzadeh.builder_pattern.Main" />
       <module name="design-patterns" />
@@ -90,12 +93,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.hamidsultanzadeh.Main" />
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hamidsultanzadeh.enums.Main" />
       <module name="design-patterns" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hamidsultanzadeh.enums.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,14 +120,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.OtherMain" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Application.Main (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.OtherMain" />
@@ -155,6 +162,8 @@
       <workItem from="1579713331621" duration="4919000" />
       <workItem from="1579773461660" duration="2614000" />
       <workItem from="1579789647285" duration="3162000" />
+      <workItem from="1579879603904" duration="116000" />
+      <workItem from="1580459857916" duration="1308000" />
     </task>
     <servers />
   </component>
@@ -166,22 +175,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="570" y="155" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1579791195426" />
-    <state width="1874" height="382" key="GridCell.Tab.0.bottom" timestamp="1579792898852">
+    <state width="822" height="246" key="GridCell.Tab.0.bottom" timestamp="1580465549387">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="382" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1579792898852" />
-    <state width="1874" height="382" key="GridCell.Tab.0.center" timestamp="1579792898852">
+    <state width="822" height="246" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1580465549387" />
+    <state width="822" height="246" key="GridCell.Tab.0.center" timestamp="1580465549387">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="382" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1579792898852" />
-    <state width="1874" height="382" key="GridCell.Tab.0.left" timestamp="1579792898852">
+    <state width="822" height="246" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1580465549387" />
+    <state width="822" height="246" key="GridCell.Tab.0.left" timestamp="1580465549386">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="382" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1579792898852" />
-    <state width="1874" height="382" key="GridCell.Tab.0.right" timestamp="1579792898852">
+    <state width="822" height="246" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1580465549386" />
+    <state width="822" height="246" key="GridCell.Tab.0.right" timestamp="1580465549387">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="382" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1579792898852" />
+    <state width="822" height="246" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1580465549387" />
     <state x="463" y="157" width="907" height="777" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579624546491">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
